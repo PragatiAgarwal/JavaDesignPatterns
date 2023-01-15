@@ -1,6 +1,4 @@
-package com.edu.prags.singletondesignpattern;
-
-import com.edu.prags.singletondesignpattern.ChocolateBoiler;
+package singletonpattern;
 
 public class Driver {
 

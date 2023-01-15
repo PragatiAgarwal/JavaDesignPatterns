@@ -1,30 +1,13 @@
-package com.edu.prags.singletondesignpattern;
+package singletonpattern;
 
-public class ChocolateBoilerSingleton {
+public class ChocolateBoiler {
 
-	//One and only one instance of the class
-	private static ChocolateBoilerSingleton singleChocoInstance;
-	
 	private boolean empty;
 	private boolean boiled;
 	
-	// Private Constructor ensures that the object cannot be instantiated outside the class
-	
-	private ChocolateBoilerSingleton() {
-		
+	public ChocolateBoiler() {
 		this.empty = true;
 		this.boiled = false;
-	}
-	
-	//Global access to the object using static method
-	
-	public static ChocolateBoilerSingleton getInstance() {
-		
-		if(singleChocoInstance == null) {
-			singleChocoInstance = new ChocolateBoilerSingleton();
-		}
-		
-		return singleChocoInstance;
 	}
 	
 	public boolean isEmpty() {
