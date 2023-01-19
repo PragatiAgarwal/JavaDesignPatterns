@@ -1,7 +1,9 @@
 package factorypattern;
 
-public class NotificationFactory {
-    public Notification createNotification(String channel)
+public  class NotificationFactory {
+
+    //Factory method
+    public static Notification createNotification(String channel)
     {
         if (channel == null || channel.isEmpty())
             return null;
