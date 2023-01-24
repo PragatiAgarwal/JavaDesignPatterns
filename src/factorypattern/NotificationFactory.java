@@ -15,7 +15,7 @@ public  class NotificationFactory {
             case "PUSH":
                 return new PushNotification();
             default:
-                throw new IllegalArgumentException("Unknown channel "+channel);
+                return null;
         }
     }
 }
